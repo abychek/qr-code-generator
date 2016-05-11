@@ -11,7 +11,7 @@ app.get('/health-check', function (req, res) {
     });
 });
 
-app.post('/', function (req, res) {
+app.post('/qrcode', function (req, res) {
     if(typeof req.body.content == 'undefined'){
         res.status(500).jsonp({
             error: 'Null content.'
